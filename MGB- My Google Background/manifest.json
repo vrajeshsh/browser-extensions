@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "MGB - My Google Background",
+    "version": "1.0",
+    "description": "Add a custom background to google.com",
+    "icons": {
+        "16": "/images/vs_logo_16.png",
+        "48": "/images/vs_logo_48.png",
+        "128": "/images/vs_logo_128.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "/images/vs_logo_16.png",
+            "48": "/images/vs_logo_48.png",
+            "128": "/images/vs_logo_128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.google.com/*"
+            ],
+            "css": [
+                "main.css"
+            ]
+        }
+    ]
+}
